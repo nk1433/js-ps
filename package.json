@@ -1,0 +1,22 @@
+{
+  "name": "js-ps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nk1433/js-ps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nk1433/js-ps/issues"
+  },
+  "homepage": "https://github.com/nk1433/js-ps#readme",
+  "dependencies": {
+    "mocks": "github:nk1433/mocks#master"
+  }
+}

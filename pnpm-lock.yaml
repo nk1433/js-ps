@@ -1,0 +1,57 @@
+lockfileVersion: 5.3
+
+specifiers:
+  mocks: github:nk1433/mocks#master
+
+dependencies:
+  mocks: github.com/nk1433/mocks/369bb62defaf2219d9431b73f921b96b2754074e
+
+packages:
+
+  /@babel/runtime/7.14.8:
+    resolution: {integrity: sha512-twj3L8Og5SaCRCErB4x4ajbvBIVV77CGeFglHpeg5WC5FF8TZzBWXtTJ4MqaD9QszLYTtr+IsaAL2rEUevb+eg==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.13.7
+    dev: false
+
+  /@laufire/utils/2.8.2:
+    resolution: {integrity: sha512-6iiXgYahBhEZCvZbAtfb29ir5AADJRzZHNp8RuH59h+hp3tUq4j+CEZWCCzO4aFPv8mAdQ4imwgqU8Jfn2wU3g==}
+    dependencies:
+      '@babel/runtime': 7.14.8
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: false
+
+  /faker/5.5.3:
+    resolution: {integrity: sha512-wLTv2a28wjUyWkbnX7u/ABZBkUkIF2fCd73V6P2oFqEGEktDfzWx4UxrSqtPRw0xPRAcjeAOIiJWqZm3pP4u3g==}
+    dev: false
+
+  /fsevents/2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    dev: false
+    optional: true
+
+  /regenerator-runtime/0.13.7:
+    resolution: {integrity: sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==}
+    dev: false
+
+  github.com/nk1433/faker-parser/924e82dd3672fa598f4134c243c59b619d5dde7c:
+    resolution: {tarball: https://codeload.github.com/nk1433/faker-parser/tar.gz/924e82dd3672fa598f4134c243c59b619d5dde7c}
+    name: faker-parser
+    version: 0.0.1
+    dependencies:
+      '@laufire/utils': 2.8.2
+      faker: 5.5.3
+    dev: false
+
+  github.com/nk1433/mocks/369bb62defaf2219d9431b73f921b96b2754074e:
+    resolution: {tarball: https://codeload.github.com/nk1433/mocks/tar.gz/369bb62defaf2219d9431b73f921b96b2754074e}
+    name: mocks
+    version: 0.0.1
+    dependencies:
+      '@laufire/utils': 2.8.2
+      faker-parser: github.com/nk1433/faker-parser/924e82dd3672fa598f4134c243c59b619d5dde7c
+    dev: false
