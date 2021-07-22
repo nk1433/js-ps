@@ -3,16 +3,21 @@ const {task} = require("mocks");
 const data = task();
 console.log(JSON.stringify(data,null,'\t'))
 
-const calculateCost = (task) => {
-    let childCost = (task.cost || 0);
-    task.tasks?.forEach((item) => childCost += calculateCost(item));
-    task.cost = childCost;
-    return childCost;
-};
 
-calculateCost(data);
+const calculateCostWithoutMutate = (task) => {
+    let output = {};
+    let totalCost = (task.cost || 0);
+    output.tasks = task.tasks?.map((item) => {
+        let task = calculateCostWithoutMutate(item);
+        totalCost += task.cost;
+        return task;
+    })
+    output.cost = totalCost;
+    return output;
+}
 
+const output = calculateCostWithoutMutate(data);
 
-console.log(JSON.stringify(data,null,'\t'))
+console.log(JSON.stringify(output,null,'\t'))
 
 
