@@ -1,0 +1,42 @@
+{
+	"name": "Anderson",
+	"cost": 6,
+	"tasks": [
+		{
+			"name": "Torrance",
+			"cost": 5,
+			"tasks": [
+				{
+					"name": "Zena",
+					"cost": 7,
+					"tasks": [
+						{
+							"name": "Billy",
+							"cost": 4,
+							"tasks": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
+{
+	"cost": 22,
+	"tasks": [
+		{
+			"cost": 16,
+			"tasks": [
+				{
+					"cost": 11,
+					"tasks": [
+						{
+							"cost": 4,
+							"tasks": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
